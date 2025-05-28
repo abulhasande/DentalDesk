@@ -41,6 +41,12 @@ namespace Dental.WinForm.Views
 
         private async void btnSave_Click(object sender, EventArgs e)
         {
+            if (!ValidateProductForm(out string error))
+            {
+                MessageBox.Show(error, "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             var patient = new Patient()
             {
                 Name = txtName.Text.Trim(),
@@ -59,6 +65,27 @@ namespace Dental.WinForm.Views
                 OnProductSaved?.Invoke(); // call the main form method                
                 this.Close();
             }
+        }
+
+        private bool ValidateProductForm(out string errorMessage)
+        {
+            errorMessage = string.Empty;
+
+            if (string.IsNullOrWhiteSpace(txtName.Text))
+            {
+                errorMessage = "Patient name is required.";
+                return false;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtPhone.Text))
+            {
+                errorMessage = "Patient Phone is required.";
+                return false;
+            }
+
+
+
+            return true;
         }
     }
 }
