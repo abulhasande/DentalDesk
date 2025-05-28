@@ -19,6 +19,7 @@ namespace Dental.WinForm
             var services = new ServiceCollection();
             // Define the base URL here
             var apiBaseUrl = "https://localhost:7030";
+
             services.AddHttpClient<IPatientService, PatientService>(client =>
             {
                 client.BaseAddress = new Uri(apiBaseUrl);

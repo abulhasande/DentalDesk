@@ -47,7 +47,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 29);
+            this.panel1.Size = new System.Drawing.Size(1463, 29);
             this.panel1.TabIndex = 1;
             // 
             // label1
@@ -67,7 +67,7 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 29);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(155, 421);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(155, 511);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
             // btnDashboard
@@ -90,10 +90,10 @@
             this.btnPatient.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnPatient.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPatient.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnPatient.Location = new System.Drawing.Point(0, 57);
-            this.btnPatient.Margin = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.btnPatient.Location = new System.Drawing.Point(0, 55);
+            this.btnPatient.Margin = new System.Windows.Forms.Padding(0);
             this.btnPatient.Name = "btnPatient";
-            this.btnPatient.Size = new System.Drawing.Size(155, 55);
+            this.btnPatient.Size = new System.Drawing.Size(157, 55);
             this.btnPatient.TabIndex = 4;
             this.btnPatient.Text = "Patient";
             this.btnPatient.UseVisualStyleBackColor = false;
@@ -114,7 +114,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1463, 540);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.IsMdiContainer = true;

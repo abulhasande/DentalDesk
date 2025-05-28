@@ -133,6 +133,42 @@ namespace Dental.Api.Data
             return null;
         }
 
+        public Patient GetByName(string name)
+        {
+            try
+            {
+                using SqlConnection conn = new SqlConnection(_connectionString);
+                string query = "SELECT * FROM Patients WHERE Name = @name";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@name", name);
+                conn.Open();
+                using SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    return new Patient
+                    {
+                        PatientId = Convert.ToInt32(reader["PatientId"]),
+                        Name = reader["Name"].ToString(),
+                        Phone = reader["Phone"].ToString(),
+                        Email = reader["Email"].ToString(),
+                        Address = reader["Address"].ToString(),
+                        DOB = reader["DOB"].ToString(),
+                        Gender = reader["Gender"].ToString(),
+                        Allergies = reader["Allergies"] != DBNull.Value ? reader["Allergies"].ToString() : null,
+                        CreatedAt = reader["CreatedAt"] != DBNull.Value
+                                                                        ? Convert.ToDateTime(reader["CreatedAt"])
+                                                                        : (DateTime?)null
+                    };
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.Error(ex.Message);
+            }
+
+            return null;
+        }
+
         public void Update(Patient patient)
         {
             try
