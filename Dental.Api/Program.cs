@@ -20,7 +20,7 @@ builder.Services.AddControllers();
 var connectionstring = builder.Configuration.GetConnectionString("Database");
 builder.Services.AddScoped<IPatientRepository>(x => new PatientRepository(connectionstring, Log.Logger));
 
-
+//builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 builder.Logging.ClearProviders();
 

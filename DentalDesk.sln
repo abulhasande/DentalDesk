@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dental.Api", "Dental.Api\De
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dental.WinForm", "Dental.WinForm\Dental.WinForm.csproj", "{C5932DD3-1801-4C9A-8E37-D129684FB469}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dentalo.Api", "Dentalo.Api\Dentalo.Api.csproj", "{42FDA391-0FC9-4802-9146-803BD7D663B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C5932DD3-1801-4C9A-8E37-D129684FB469}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5932DD3-1801-4C9A-8E37-D129684FB469}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5932DD3-1801-4C9A-8E37-D129684FB469}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42FDA391-0FC9-4802-9146-803BD7D663B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42FDA391-0FC9-4802-9146-803BD7D663B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42FDA391-0FC9-4802-9146-803BD7D663B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42FDA391-0FC9-4802-9146-803BD7D663B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

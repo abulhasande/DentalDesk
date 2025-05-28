@@ -1,0 +1,6 @@
+@Dentalo.Api_HostAddress = http://localhost:5025
+
+GET {{Dentalo.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -6,7 +6,6 @@ namespace Dental.Api.Data
     {
         IEnumerable<Patient> GetAll();
         Patient GetById(int id);
-        Patient GetByName(string name);
         void Add(Patient product);
         void Update(Patient product);
         void Delete(int id);
